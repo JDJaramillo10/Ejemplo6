@@ -9,12 +9,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { Foto } from './interfaz/foto';
 
 @Component({
-  selector: 'app-root',
-  standalone:true,
-  imports: [RouterOutlet, ContactoComponent, AlbumExampleComponent, CardShadowComponent, FooterComponent, HttpClientModule],
-  providers: [RecursosService],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    imports: [RouterOutlet, ContactoComponent, AlbumExampleComponent, CardShadowComponent, FooterComponent, HttpClientModule],
+    providers: [RecursosService],
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 
 
