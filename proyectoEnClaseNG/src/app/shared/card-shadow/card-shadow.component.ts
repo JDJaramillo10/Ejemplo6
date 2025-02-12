@@ -6,6 +6,7 @@ import { Foto } from 'src/app/interfaz/foto';
 @Component({
     selector: 'app-card-shadow',
     imports: [CommonModule],
+    standalone: true,
     providers: [RecursosService],
     templateUrl: './card-shadow.component.html',
     styleUrls: ['./card-shadow.component.css']
@@ -15,7 +16,7 @@ export class CardShadowComponent {
 
   fotos: Foto[] = [];
   constructor(private recursosService: RecursosService){
-    recursosService.obtenerDatos().subscribe(respuesta =>{
+    recursosService.obtenerDatosFoto().subscribe(respuesta =>{
       this.fotos = respuesta as Array<Foto>
     })
   }

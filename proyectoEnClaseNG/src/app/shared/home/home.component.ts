@@ -11,5 +11,4 @@ import { AlbumExampleComponent } from '../album-example/album-example.component'
 })
 export class HomeComponent {
   titulo:string="home"
-
 }
